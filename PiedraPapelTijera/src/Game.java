@@ -12,12 +12,12 @@ public class Game {
 	}
 
 	private void welcome() {
-		System.out.println("Bienvenido a nuestro pequeÃ±o juego: Piedra Papel Tijeras :-D");
+		System.out.println("Bienvenido a nuestro pequeño juego: Piedra Papel Tijeras Lagarto Spock :-D");
 	}
 
 	private void printHelp() {
 		System.out.println("");
-		System.out.println("Ordenes y comandos vÃ¡lidos para el juego: ");
+		System.out.println("Órdenes y comandos válidos para el juego: ");
 		parser.showCommands();
 	}
 
@@ -30,14 +30,14 @@ public class Game {
 		if (who == MoveWords.EMPATE)
 			System.out.println("Es un empate\n");
 		else if (who == MoveWords.GANA)
-			System.out.println("Tu ganas!!! :-D \n");
+			System.out.println("Tú ganas!!! :-D \n");
 		else
-			System.out.println("Tu pierdes!!! :-( \n");
+			System.out.println("Tú pierdes!!! :-( \n");
 	}
 
 	private void printMoves(Move player, Move computer) {
 		System.out.println("Y el resultado es...");
-		System.out.println("Tu elegiste: " + player.getMove());
+		System.out.println("Tú elegiste: " + player.getMove());
 		System.out.println("El PC elige: " + computer.getMove());
 	}
 
@@ -45,7 +45,7 @@ public class Game {
 		Move pcMove;
 
 		if (move.isUnknown()) {
-			System.out.println("OpciÃ³n No VÃ¡lida");
+			System.out.println("Opción No Válida");
 			printHelp();
 			return true;
 		}
@@ -75,7 +75,7 @@ public class Game {
 			continuing = processMove(move);
 			round++;
 		}
-		System.out.println("Adios!!");
+		System.out.println("Adiós!!");
 	}
 
 	public static void main(String[] args) {
